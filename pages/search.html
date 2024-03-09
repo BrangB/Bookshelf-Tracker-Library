@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../images/Bibrary.png" type="image/png">
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="https://kit.fontawesome.com/2287ebfac7.js" crossorigin="anonymous"></script>
+    <title>Search Page</title>
+</head>
+<body class="mainbody overflow-x-hidden min-h-screen" style="background-image: linear-gradient(to bottom left, #e0eafc, #ffff, #cfdef3);">
+    <nav class="flex gap-4 lg:gap-8 fixed top-0 left-0 items-center justify-start px-8 py-6 md:px-20 md:py-12 z-40">
+        <a class="arrow" href="library.html"><i class="fa-solid fa-arrow-left text-lg lg:text-xl cursor-pointer"></i></a>
+        <div class="search cursor-pointer duration-100 px-3 py-2 flex items-center justify-center gap-2 bg-[#3E5CC8] hover:bg-[#4e6ee0] text-white text-sm font-normal rounded-sm"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></div>
+    </nav>
+    <div class="overlay z-50 duration-300 w-screen h-screen flex flex-col md:flex-row items-center justify-center gap-3 backdrop-blur-md bg-[#7979791a] fixed top-0 left-0" style="background-image: linear-gradient(to bottom left, #c4d8fc46, #ffffffrgba(186, 211, 245, 0.192)d3f5);">
+        <i class="fa-solid fa-arrow-right-from-bracket absolute top-6 right-6 lg:top-10 lg:right-16 text-[#274ac9] cursor-pointer text-xl lg:text-2xl"></i>
+        <input type="text" class="inputbook md:w-[300px] w-[270px] bg-transparent h-[50px] border border-[#3751af] outline-[#274ac9] rounded-lg px-4 placeholder:text-[#464646]" placeholder="Search Books">
+        <div class="searchBooks cursor-pointer duration-100 h-[45px] px-4 py-2 flex items-center justify-center gap-2 bg-[#3E5CC8] hover:bg-[#4e6ee0] text-white text-sm font-normal rounded-sm"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></div>
+    </div>
+    <div class="result flex flex-col px-3 py-9 items-center w-full justify-start mt-5">
+        <div class="heading text-left relative mt-16 mb-12 lg:mb-16 header w-full lg:w-[85%] text-xl px-3 md:text-2xl xl:text-3xl font-bold " id="books">
+            Books <span class="text-[#334ca5]">Result</span>
+            <span class="bg-[#314daf] w-24 md:w-32 h-[5px] lg:h-2 absolute -bottom-2 animate-slide"></span>
+          </div>
+          <div class="libraryCase flex w-full lg:w-[85%] rounded-md gap-6 md:gap-8 flex-wrap items-start justify-center ">
+            <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+                <div class="item w-[120px] md:w-[160px] bg-gray-100 h-auto p-2 flex flex-col items-startS justify-start overflow-hidden rounded-md transition-all duration-200 hover:shadow-md">
+                    <div class="animate-pulse w-full h-[140px] md:h-[180px] bg-slate-300"></div>
+                    <h3 class="animate-pulse mt-4 mb-2 title w-24 h-2 font-bold text-sm text-start bg-slate-300"></h3>
+                    <h3 class="animate-pulse authorName text-start w-20 h-2 mb-2 bg-slate-300"></h3>
+                    <div class="animate-pulse priceAndPurchase flex items-center justify-between w-full p-2">
+                        <div class="text-sm w-20 h-2 bg-slate-300">   
+                        </div>
+                        <div class="w-5 h-5 rounded-full bg-slate-300"></div>
+                    </div>
+                </div>
+          </div>
+    </div>
+
+    <!-- pagination -->
+    <div class="pagination w-full flex flex-col md:flex-row items-center justify-center my-10">
+        <button class="bg-[#3E5CC8] py-2 px-3 m-2 text-white rounded-md hover:bg-[#3E5CC8] transition-all duration-200 text-sm lg:text-md">Previous</button>
+        <div class="max-w-[200px] lg:max-w-[300px] flex bg-slate-200 rounded-md h-full overflow-x-scroll rootButton mx-2">
+            <div class="flex items-center justify-center buttonGroup">
+                <button class="animate-pulse bg-slate-400 w-8 h-8 py-2 px-3 m-2 text-white rounded-md hover:bg-[#3E5CC8] transition-all duration-200 text-sm lg:text-md"></button>
+                <button class="animate-pulse bg-slate-400 w-8 h-8 py-2 px-3 m-2 text-white rounded-md hover:bg-[#3E5CC8] transition-all duration-200 text-sm lg:text-md"></button>
+                <button class="animate-pulse bg-slate-400 w-8 h-8 py-2 px-3 m-2 text-white rounded-md hover:bg-[#3E5CC8] transition-all duration-200 text-sm lg:text-md"></button>
+            </div>
+        </div>
+        <button class="bg-[#3E5CC8] py-2 px-3 m-2 text-white rounded-md hover:bg-[#3E5CC8] transition-all duration-200 text-sm lg:text-md">Next</button>
+    </div>
+    
+    <script src="../js/search.js" type="module"></script>
+</body>
+</html>

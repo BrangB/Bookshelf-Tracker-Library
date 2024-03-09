@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #E8E8F4;
+}
+
+.title, .authorName{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes slide {
+    0% {
+        left: -10px;
+    }
+    50%{
+        left: 100px;
+    }
+    100% {
+        left: -10px;
+    }
+}
+
+.animate-slide {
+    animation: slide 5s ease-in-out infinite;
+}
+
+@media screen and (max-width: 600px) {
+    @keyframes slide {
+        0% {
+            left: -10px;
+        }
+        50%{
+            left: 50px;
+        }
+        100% {
+            left: -10px;
+        }
+    }
+
+    .animate-slide {
+        animation: slide 5s ease-in-out infinite;
+    }
+}

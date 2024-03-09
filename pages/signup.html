@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2287ebfac7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/loginAndsignup.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../images/Bibrary.png" type="image/png">
+    <title>Signup Page</title>
+</head>
+<body class="overflow-x-hidden">
+  <div class="w-screen h-screen overflow-hidden flex items-center justify-center" style="background-image: linear-gradient(to bottom left, #e0eafc, #ffff, #cfdef3);">
+      <div class="card w-[90%] shadow-xl sm:w-[80%] md:w-[700px] h-auto md:h-[500px] bg-white flex">
+        <div class="signUpright hidden md:flex  w-1/2 h-full">
+          <div class="layer w-full h-full bg-black opacity-20"></div>
+        </div>
+        <div class="w-full md:w-1/2 h-full flex flex-col items-center justify-between py-10">
+          <h2 class="font-bold text-2xl text-start w-[80%] mb-5 md:mb-2 text-[#3E5CC8]">SIGNUP</h2>
+          <form action="mainPage.html" class="w-[80%] flex flex-col">
+            <div class="email flex flex-col mb-5">
+              <label for="email" class="text-sm mb-2 font-semibold">Email</label>
+              <input type="text" id="email" placeholder="Enter your email" class="outline-none bg-[#f2f9fd] p-2 border-none" required/>
+            </div>
+            <div class="password flex flex-col mb-5">
+              <label for="password" class="text-sm mb-2 font-semibold">Password</label>
+              <input type="password" id="password" placeholder="Enter your Password" class="outline-none bg-[#f2f9fd] p-2 border-none" required/>
+            </div>
+            <div class="confirmPassword flex flex-col mb-3">
+              <label for="confirmPassword" class="text-sm mb-2 font-semibold">Confirm Password</label>
+              <input type="password" id="confirmPassword" placeholder="Confirm Password" class="outline-none bg-[#f2f9fd] p-2 border-none" required/>
+            </div>
+            <button type="submit" class="bg-[#3E5CC8] w-[32%] sm-w-[25%] h-[35px] text-white py-1 mt-2 md:mt-5 font-semibold text-sm">SIGNUP</button>
+          </form>
+          <div class="google flex md:hidden w-[70%] items-center justify-center font-semibold text-sm py-3 px-6 rounded-lg bg-[#eaedf5] mt-5"><img src="../images/googleLogo.png" class="w-[25px] me-4" alt=""> Continue with Google</div>
+          <p class="text-sm mt-4 w-[80%] sm-w[75%]">If you already have an account? <a href="login.html" class="font-bold text-[12px] text-[#3E5CC8]">LOGIN</a></p>
+        </div>
+      </div>
+  </div>
+
+  <script src="../js/loginAndSignup.js"></script>
+</body>
+</html>

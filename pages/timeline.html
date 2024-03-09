@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="icon" href="../images/Bibrary.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2287ebfac7.js" crossorigin="anonymous"></script>
+    <title>Timeline Page</title>
+</head>
+<body class="timelinebody min-h-screen overflow-x-hidden" style="background-image: linear-gradient(to bottom left, #e0eafc, #ffff, #cfdef3);">
+    <div class="smallMenu bg-[#3a53ac] w-screen h-screen fixed top-0 right-0 z-50 flex lg:hidden items-center justify-center transition-all duration-300">
+        <i class="fa-solid fa-x text-lg text-white absolute top-10 right-10"></i>
+        <ul class="flex flex-col items-center text-white justify-center gap-8 text-lg md:text-lg font-[500]">
+            <li><a href="mainPage.html">Home</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <a href="search.html" class="cursor-pointer duration-100 px-3 py-3 flex items-center justify-center gap-2 bg-[#3E5CC8] hover:bg-[#4e6ee0] text-white text-sm font-normal rounded-sm"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></a>
+        </ul>
+    </div>
+    <nav class="flex items-center fixed top-0 left-0 justify-between w-full z-30 px-5 md:px-10 backdrop-blur-md py-3 shadow-md">
+        <div class="logo flex items-center justify-center">
+            <img src="../images/Bibrary.png" alt="" class="text-[#3E5CC8] mb-3 w-12 h-12 object-cover" />
+        </div>
+        <ul class="md:flex gap-8 font-[500] hidden items-center justify-center">
+            <li class="cursor-pointer hover:text-[#3E5CC8] duration-200"><a href="mainPage.html">Home</a></li>
+            <li class="cursor-pointer hover:text-[#3E5CC8] duration-200 "><a href="library.html">Library</a></li>
+            <li class="cursor-pointer hover:text-[#3E5CC8] duration-200 border-b-4 border-[#3E5CC8]"><a href="timeline.html">Timeline</a></li>
+            <a href="search.html" class="cursor-pointer duration-100 px-3 py-2 flex items-center justify-center gap-2 bg-[#3E5CC8] hover:bg-[#4e6ee0] text-white text-sm font-normal rounded-sm"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></a>
+        </ul>
+        <div class="profile hidden md:flex">
+            <div class="image w-12 h-12 rounded-full overflow-hidden cursor-pointer">
+                <img src="../images/avatar.png" class="w-full h-full object-cover" alt="Profile Image" />
+            </div>
+        </div>
+        <div class="menubar w-10 h-10 bg-transparent hover:bg-gray-300 rounded-full flex md:hidden items-center transition-all duration-200 justify-center"><i class="fa-solid fa-bars text-xl"></i></div>
+    </nav>
+    <div class="timeline py-28">
+    </div>
+
+    <script src="../js/timeline.js"></script>
+</body>
+</html>
